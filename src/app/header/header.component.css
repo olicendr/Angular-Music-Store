@@ -1,0 +1,44 @@
+header {
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-weight: 400;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  border: none;
+  padding: 2px;
+}
+
+input {
+  width: 200px;
+  border: none;
+  background-color: #efefef;
+  height: 30px;
+  outline: none;
+  padding: 5px 10px;
+}
+
+img {
+  cursor: pointer;
+}
+
+.favorites-icon {
+  margin-top: 4px;
+}
+
+@media (max-width: 1007px) {
+  h1 {
+    font-size: 25px;
+  }
+}

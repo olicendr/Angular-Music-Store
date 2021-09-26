@@ -1,0 +1,24 @@
+.side {
+  grid-area: sidebar;
+}
+
+.content {
+  grid-area: items;
+}
+
+.main {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 5fr;
+  grid-template-areas: "sidebar items";
+}
+
+@media (max-width: 1007px) {
+  .side {
+    display: none;
+  }
+
+  .main {
+    display: block;
+  }
+}

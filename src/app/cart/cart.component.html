@@ -1,0 +1,22 @@
+<div class="cart">
+    <div class="returnBtn">
+      <a routerLink="/">
+        <app-custom-button title="Back to Store"></app-custom-button>
+      </a>
+    </div>
+
+    <div *ngIf="!items.length" class="cart-empty">
+        <h2>Cart is empty</h2>
+    </div>
+
+    <div *ngIf="items">
+        <div *ngFor="let item of items" class="cart-item">
+          <div class="item-image-wrapper">
+            <img [src]="'assets/images/items/' + item.imageSource" alt="item.title">
+          </div>
+          <p class="title">{{item.title}}</p>
+          <p>{{item.price}}</p>
+          <app-custom-button title="Remove" (click)="removeFromCart(item)"></app-custom-button>
+        </div>
+    </div>
+</div>
