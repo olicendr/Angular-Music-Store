@@ -22,7 +22,7 @@
           <p>Price: {{item.price}}</p>
           <div class="item-buttons">
               <app-custom-button title="Add to Cart"></app-custom-button>
-              <app-custom-button title="Remove"></app-custom-button>
+              <app-custom-button (click)="removeFromFavorites(item)" title="Remove"></app-custom-button>
           </div>
         </div>
       </div>
